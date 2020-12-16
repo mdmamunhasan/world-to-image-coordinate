@@ -18,6 +18,6 @@ P = np.dot(K, np.concatenate((R, t), 1))
 X = np.append(Xw, 1).reshape([-1, 1])
 x = np.dot(P, X).flatten()
 
-Px = x[0]/x[2]
-Py = x[1]/x[2]
+Px = int(x[0]/x[2])
+Py = int(x[1]/x[2])
 print(f"Image Point = x:{Px}, y:{Py}")
