@@ -20,3 +20,5 @@ x = np.dot(P, Xw).flatten()
 Px = int(x[0] / x[2])
 Py = int(x[1] / x[2])
 print(f"Image Point = x:{Px}, y:{Py}")
+
+
